@@ -250,9 +250,8 @@ summary {
 }
 
 .caption {
-    background-color: #00000006;
     position: absolute;
-    top: 25%;
+    top: 22.5%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -269,6 +268,7 @@ summary {
     text-align: center;
     font-weight: 300;
     opacity: 90%;
+    font-size: 1rem;
 }
 
 a:visited {
@@ -288,7 +288,75 @@ h1 {
 main {
     width: 100%;
     height: 100%;
-    background-color: gray;
+    background-color: rgb(243 244 246);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.info {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.form {
+    background-color: #ffffff;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    row-gap: 1rem;
+    width: 800px;
+}
+
+.labelled-input {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input {
+    padding: 0.4rem;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+}
+
+input:focus {
+    outline: 1px solid blue;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+input:user-invalid {
+    border: 1px solid red;
+}
+
+.submit-button {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: lightblue;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.login-link {
+    color: blue;
+}
+
+.login-link:visited {
+    color: blue;
 }
 
 /* End CSS */
